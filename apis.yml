@@ -1,0 +1,69 @@
+aid: streak
+name: Streak
+description: >-
+  Streak is a CRM that lives inside Gmail, turning the inbox into a pipeline
+  management workspace for sales, hiring, support, fundraising, deal flow,
+  and project tracking using pipelines, boxes, stages, and email tracking.
+  The Streak API provides programmatic REST access to the core CRM data
+  models including pipelines, boxes, stages, fields, threads, tasks, and
+  teams. Authentication uses HTTP Basic Auth with the API key as the
+  username.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - CRM
+  - Sales
+  - Gmail
+  - Pipeline Management
+  - Email Tracking
+  - Productivity
+  - Small Business
+  - Workflow
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/streak/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: streak:rest-api
+    name: Streak REST API
+    description: >-
+      RESTful API exposing CRUD access to pipelines, boxes (records),
+      stages, custom fields, threads, tasks, files, comments, users, and
+      teams in the Streak CRM. Authentication uses HTTP Basic Auth with the
+      API key supplied as the username and an empty password.
+    humanURL: https://streak.readme.io/docs
+    baseURL: https://api.streak.com/api
+    tags:
+      - CRM
+      - Pipelines
+      - Boxes
+      - Stages
+      - REST
+    properties:
+      - type: Documentation
+        url: https://streak.readme.io/docs
+      - type: Authentication
+        url: https://streak.readme.io/docs/authentication
+      - type: Getting Started
+        url: https://support.streak.com/en/articles/2612883-get-your-streak-api-key
+      - type: Announcement
+        url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
+common:
+  - type: Website
+    url: https://www.streak.com
+  - type: Documentation
+    url: https://streak.readme.io/docs
+  - type: Pricing
+    url: https://www.streak.com/pricing
+  - type: Sign Up
+    url: https://www.streak.com/sign-up
+  - type: Support
+    url: https://support.streak.com
+  - type: Features
+    url: https://www.streak.com/features
+  - type: Chrome Extension
+    url: https://chromewebstore.google.com/detail/streak-crm-for-gmail/pnnfemgpilpdaojpnkjdgfgbnnjojfik
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
