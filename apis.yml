@@ -45,7 +45,7 @@ apis:
         url: https://streak.readme.io/docs
       - type: Authentication
         url: https://streak.readme.io/docs/authentication
-      - type: Getting Started
+      - type: GettingStarted
         url: https://support.streak.com/en/articles/2612883-get-your-streak-api-key
       - type: Announcement
         url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
@@ -56,7 +56,7 @@ common:
     url: https://streak.readme.io/docs
   - type: Pricing
     url: https://www.streak.com/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://www.streak.com/sign-up
   - type: Support
     url: https://support.streak.com
