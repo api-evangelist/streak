@@ -50,6 +50,8 @@ apis:
       - type: Announcement
         url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/streak-com
   - type: Website
     url: https://www.streak.com
   - type: Documentation
