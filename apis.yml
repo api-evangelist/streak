@@ -66,6 +66,8 @@ common:
     url: https://www.streak.com/features
   - type: Chrome Extension
     url: https://chromewebstore.google.com/detail/streak-crm-for-gmail/pnnfemgpilpdaojpnkjdgfgbnnjojfik
+  - type: LLMsTxt
+    url: https://api.streak.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
