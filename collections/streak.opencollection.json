@@ -1,0 +1,379 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Streak REST API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pipelines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all pipelines accessible to the authenticated user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines"
+          },
+          "docs": "List all pipelines accessible to the authenticated user"
+        },
+        {
+          "info": {
+            "name": "Create a new pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.streak.com/api/v1/pipelines"
+          },
+          "docs": "Create a new pipeline"
+        },
+        {
+          "info": {
+            "name": "Get a single pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Get a single pipeline"
+        },
+        {
+          "info": {
+            "name": "Edit a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Edit a pipeline"
+        },
+        {
+          "info": {
+            "name": "Delete a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Delete a pipeline"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Boxes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all boxes in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/boxes",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all boxes in a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new box in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/boxes",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new box in a pipeline"
+        },
+        {
+          "info": {
+            "name": "Get a single box",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a single box"
+        },
+        {
+          "info": {
+            "name": "Edit a box (update properties of a box)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Edit a box (update properties of a box)"
+        },
+        {
+          "info": {
+            "name": "Delete a box",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a box"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Stages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all stages of a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/stages",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all stages of a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new stage in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/stages",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new stage in a pipeline"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Fields",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all custom fields defined on a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/fields",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all custom fields defined on a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new custom field on a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/fields",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new custom field on a pipeline"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Newsfeed",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get historical changes for a pipeline and its boxes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/newsfeed",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get historical changes for a pipeline and its boxes"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Webhooks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all webhooks registered on a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/webhooks",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all webhooks registered on a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new webhook on a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/webhooks",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new webhook on a pipeline"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the currently authenticated user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/users/me"
+          },
+          "docs": "Get the currently authenticated user"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
