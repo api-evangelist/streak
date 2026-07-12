@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/streak-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: |-
+    HTTP Basic Authentication. Set the username to your Streak API key and leave
+    the password empty. Obtain an API key from
+    https://support.streak.com/en/articles/2612883-get-your-streak-api-key.
+  sources:
+  - openapi/streak-openapi.yml

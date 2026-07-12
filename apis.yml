@@ -50,6 +50,12 @@ apis:
       - type: Announcement
         url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
 common:
+  - type: VulnerabilityDisclosure
+    url: security/streak-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/streak-domain-security.yml
+  - type: Authentication
+    url: authentication/streak-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/streak-com
   - type: Website
@@ -68,6 +74,8 @@ common:
     url: https://chromewebstore.google.com/detail/streak-crm-for-gmail/pnnfemgpilpdaojpnkjdgfgbnnjojfik
   - type: LlmsText
     url: https://api.streak.com/llms.txt
+  - url: https://medium.com/feed/streak-developer-blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
