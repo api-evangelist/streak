@@ -50,6 +50,8 @@ apis:
       - type: Announcement
         url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
 common:
+  - type: AgenticAccess
+    url: agentic-access/streak-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/streak-vulnerability-disclosure.yml
   - type: DomainSecurity
