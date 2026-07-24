@@ -1,0 +1,66 @@
+openapi: 3.1.0
+info:
+  title: Streak REST Boxes Stages API
+  description: 'RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing
+
+    CRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,
+
+    files, comments, users, and teams.
+
+
+    Authentication uses HTTP Basic Auth with the API key supplied as the username and
+
+    an empty password. All requests must use HTTPS.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Streak Support
+    url: https://streak.readme.io/docs
+  license:
+    name: Proprietary
+servers:
+- url: https://api.streak.com/api/v1
+  description: Streak API v1
+- url: https://api.streak.com/api
+  description: Streak API (root, used by some v2 endpoints)
+security:
+- basicAuth: []
+tags:
+- name: Stages
+paths:
+  /pipelines/{pipelineKey}/stages:
+    parameters:
+    - in: path
+      name: pipelineKey
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Stages
+      summary: List all stages of a pipeline
+      operationId: listStages
+      responses:
+        '200':
+          description: An array of stages
+    put:
+      tags:
+      - Stages
+      summary: Create a new stage in a pipeline
+      operationId: createStage
+      responses:
+        '200':
+          description: The created stage
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: 'HTTP Basic Authentication. Set the username to your Streak API key and leave
+
+        the password empty. Obtain an API key from
+
+        https://support.streak.com/en/articles/2612883-get-your-streak-api-key.
+
+        '
