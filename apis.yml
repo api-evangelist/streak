@@ -9,7 +9,19 @@ description: >-
   teams. Authentication uses HTTP Basic Auth with the API key as the
   username.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/streak.png
 tags:
   - CRM
   - Sales
@@ -25,30 +37,99 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: streak:rest-api
-    name: Streak REST API
-    description: >-
-      RESTful API exposing CRUD access to pipelines, boxes (records),
-      stages, custom fields, threads, tasks, files, comments, users, and
-      teams in the Streak CRM. Authentication uses HTTP Basic Auth with the
-      API key supplied as the username and an empty password.
-    humanURL: https://streak.readme.io/docs
-    baseURL: https://api.streak.com/api
-    tags:
-      - CRM
-      - Pipelines
-      - Boxes
-      - Stages
-      - REST
-    properties:
-      - type: Documentation
-        url: https://streak.readme.io/docs
-      - type: Authentication
-        url: https://streak.readme.io/docs/authentication
-      - type: GettingStarted
-        url: https://support.streak.com/en/articles/2612883-get-your-streak-api-key
-      - type: Announcement
-        url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
+- aid: streak:rest-api
+  name: Streak REST API
+  description: >-
+    RESTful API exposing CRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,
+    files, comments, users, and teams in the Streak CRM. Authentication uses HTTP Basic Auth with the
+    API key supplied as the username and an empty password.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - CRM
+  - Pipelines
+  - Boxes
+  - Stages
+  - REST
+  properties:
+  - type: Documentation
+    url: https://streak.readme.io/docs
+  - type: Authentication
+    url: https://streak.readme.io/docs/authentication
+  - type: GettingStarted
+    url: https://support.streak.com/en/articles/2612883-get-your-streak-api-key
+  - type: Announcement
+    url: https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec
+- aid: streak:streak-boxes-api
+  name: Streak Boxes API
+  description: The Boxes API from Streak — 2 operation(s) for boxes.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Boxes
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-boxes-api-openapi.yml
+- aid: streak:streak-fields-api
+  name: Streak Fields API
+  description: The Fields API from Streak — 1 operation(s) for fields.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Fields
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-fields-api-openapi.yml
+- aid: streak:streak-newsfeed-api
+  name: Streak Newsfeed API
+  description: The Newsfeed API from Streak — 1 operation(s) for newsfeed.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Newsfeed
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-newsfeed-api-openapi.yml
+- aid: streak:streak-pipelines-api
+  name: Streak Pipelines API
+  description: The Pipelines API from Streak — 2 operation(s) for pipelines.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Pipelines
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-pipelines-api-openapi.yml
+- aid: streak:streak-stages-api
+  name: Streak Stages API
+  description: The Stages API from Streak — 1 operation(s) for stages.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Stages
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-stages-api-openapi.yml
+- aid: streak:streak-users-api
+  name: Streak Users API
+  description: The Users API from Streak — 1 operation(s) for users.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-users-api-openapi.yml
+- aid: streak:streak-webhooks-api
+  name: Streak Webhooks API
+  description: The Webhooks API from Streak — 1 operation(s) for webhooks.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/streak-agentic-access.yml
