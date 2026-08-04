@@ -1,0 +1,26 @@
+{
+  "provider": "streak",
+  "sources": [
+    "streak-boxes-api-openapi.yml",
+    "streak-fields-api-openapi.yml",
+    "streak-newsfeed-api-openapi.yml",
+    "streak-pipelines-api-openapi.yml",
+    "streak-stages-api-openapi.yml",
+    "streak-users-api-openapi.yml",
+    "streak-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "streak-boxes-api-openapi.yml",
+    "streak-fields-api-openapi.yml",
+    "streak-newsfeed-api-openapi.yml",
+    "streak-pipelines-api-openapi.yml",
+    "streak-stages-api-openapi.yml",
+    "streak-users-api-openapi.yml",
+    "streak-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

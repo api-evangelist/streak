@@ -1,0 +1,219 @@
+openapi: 3.1.0
+info:
+  title: Streak REST API
+  description: |
+    RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing
+    CRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,
+    files, comments, users, and teams.
+
+    Authentication uses HTTP Basic Auth with the API key supplied as the username and
+    an empty password. All requests must use HTTPS.
+  version: "1.0.0"
+  contact:
+    name: Streak Support
+    url: https://streak.readme.io/docs
+  license:
+    name: Proprietary
+servers:
+  - url: https://api.streak.com/api/v1
+    description: Streak API v1
+  - url: https://api.streak.com/api
+    description: Streak API (root, used by some v2 endpoints)
+security:
+  - basicAuth: []
+tags:
+  - name: Pipelines
+  - name: Boxes
+  - name: Stages
+  - name: Fields
+  - name: Users
+  - name: Webhooks
+  - name: Newsfeed
+paths:
+  /pipelines:
+    get:
+      tags: [Pipelines]
+      summary: List all pipelines accessible to the authenticated user
+      operationId: listPipelines
+      responses:
+        '200':
+          description: An array of pipelines
+    post:
+      tags: [Pipelines]
+      summary: Create a new pipeline
+      operationId: createPipeline
+      responses:
+        '200':
+          description: The created pipeline
+  /pipelines/{pipelineKey}:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+        description: Unique identifier for the pipeline
+    get:
+      tags: [Pipelines]
+      summary: Get a single pipeline
+      operationId: getPipeline
+      responses:
+        '200':
+          description: A pipeline object
+    put:
+      tags: [Pipelines]
+      summary: Edit a pipeline
+      operationId: updatePipeline
+      responses:
+        '200':
+          description: The updated pipeline
+    delete:
+      tags: [Pipelines]
+      summary: Delete a pipeline
+      operationId: deletePipeline
+      responses:
+        '200':
+          description: Deletion result
+  /pipelines/{pipelineKey}/boxes:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Boxes]
+      summary: List all boxes in a pipeline
+      operationId: listBoxesInPipeline
+      responses:
+        '200':
+          description: An array of boxes
+    put:
+      tags: [Boxes]
+      summary: Create a new box in a pipeline
+      operationId: createBoxInPipeline
+      responses:
+        '200':
+          description: The created box
+  /pipelines/{pipelineKey}/stages:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Stages]
+      summary: List all stages of a pipeline
+      operationId: listStages
+      responses:
+        '200':
+          description: An array of stages
+    put:
+      tags: [Stages]
+      summary: Create a new stage in a pipeline
+      operationId: createStage
+      responses:
+        '200':
+          description: The created stage
+  /pipelines/{pipelineKey}/fields:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Fields]
+      summary: List all custom fields defined on a pipeline
+      operationId: listFields
+      responses:
+        '200':
+          description: An array of field definitions
+    put:
+      tags: [Fields]
+      summary: Create a new custom field on a pipeline
+      operationId: createField
+      responses:
+        '200':
+          description: The created field
+  /pipelines/{pipelineKey}/newsfeed:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Newsfeed]
+      summary: Get historical changes for a pipeline and its boxes
+      operationId: getPipelineNewsfeed
+      responses:
+        '200':
+          description: An array of newsfeed events
+  /pipelines/{pipelineKey}/webhooks:
+    parameters:
+      - in: path
+        name: pipelineKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Webhooks]
+      summary: List all webhooks registered on a pipeline
+      operationId: listPipelineWebhooks
+      responses:
+        '200':
+          description: An array of webhooks
+    post:
+      tags: [Webhooks]
+      summary: Create a new webhook on a pipeline
+      operationId: createPipelineWebhook
+      responses:
+        '200':
+          description: The created webhook
+  /boxes/{boxKey}:
+    parameters:
+      - in: path
+        name: boxKey
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Boxes]
+      summary: Get a single box
+      operationId: getBox
+      responses:
+        '200':
+          description: A box object
+    post:
+      tags: [Boxes]
+      summary: Edit a box (update properties of a box)
+      operationId: updateBox
+      responses:
+        '200':
+          description: The updated box
+    delete:
+      tags: [Boxes]
+      summary: Delete a box
+      operationId: deleteBox
+      responses:
+        '200':
+          description: Deletion result
+  /users/me:
+    get:
+      tags: [Users]
+      summary: Get the currently authenticated user
+      operationId: getCurrentUser
+      responses:
+        '200':
+          description: The current user object
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: |
+        HTTP Basic Authentication. Set the username to your Streak API key and leave
+        the password empty. Obtain an API key from
+        https://support.streak.com/en/articles/2612883-get-your-streak-api-key.
