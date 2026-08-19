@@ -1,0 +1,130 @@
+{
+  "item": [
+    {
+      "id": "ffbcf56b-403f-4ef1-a8c1-92b72b0abcca",
+      "name": "Newsfeed",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "39b23203-4844-45a0-984b-c7134b6fd23d",
+          "name": "Get historical changes for a pipeline and its boxes",
+          "request": {
+            "name": "Get historical changes for a pipeline and its boxes",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey",
+                "newsfeed"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7a64e475-2dd4-4529-8f68-9cf60fd9d891",
+              "name": "An array of newsfeed events",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey",
+                    "newsfeed"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.streak.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "700bb81e-f5dc-4231-80d6-f6db04890a32",
+    "name": "Streak REST Boxes Newsfeed API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing\nCRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,\nfiles, comments, users, and teams.\n\nAuthentication uses HTTP Basic Auth with the API key supplied as the username and\nan empty password. All requests must use HTTPS.\n\n\nContact Support:\n Name: Streak Support",
+      "type": "text/plain"
+    }
+  }
+}

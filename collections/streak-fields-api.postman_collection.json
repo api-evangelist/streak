@@ -1,0 +1,215 @@
+{
+  "item": [
+    {
+      "id": "f74a1b76-c4ac-4403-adc2-02984f592032",
+      "name": "Fields",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0420356e-9a5b-4f3d-bc19-8f7978d2373e",
+          "name": "List all custom fields defined on a pipeline",
+          "request": {
+            "name": "List all custom fields defined on a pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey",
+                "fields"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8bd523f8-d9d5-42f6-8240-fb91f04a8bbd",
+              "name": "An array of field definitions",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey",
+                    "fields"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7841cdda-78da-4f3a-a75f-3cc67b5ed247",
+          "name": "Create a new custom field on a pipeline",
+          "request": {
+            "name": "Create a new custom field on a pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey",
+                "fields"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "60069fa2-b83f-4679-93ed-7dabbcf228cc",
+              "name": "The created field",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey",
+                    "fields"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.streak.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "ca166d4a-2396-4d3a-87c7-adedc2242a05",
+    "name": "Streak REST Boxes Fields API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing\nCRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,\nfiles, comments, users, and teams.\n\nAuthentication uses HTTP Basic Auth with the API key supplied as the username and\nan empty password. All requests must use HTTPS.\n\n\nContact Support:\n Name: Streak Support",
+      "type": "text/plain"
+    }
+  }
+}

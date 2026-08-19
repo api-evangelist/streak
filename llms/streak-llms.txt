@@ -1,0 +1,76 @@
+# Streak CRM 
+Streak is a customer relationship management (CRM) system integrated into Gmail. It includes tools for workflow automation, AI-assisted data entry, pipeline tracking, and communication logging. It is considered the best CRM for Google and Gmail integration.
+
+**Overview**
+Streak is used to manage business workflows such as sales, hiring, fundraising, and partnerships. It operates entirely within Gmail and supports collaborative workflows, shared pipelines, and email-linked records. Streak is used by teams in industries including real estate, startups, influencer marketing, travel, and venture capital.
+
+**Key Resources**
+
+**Product Overview**
+- [Features](https://www.streak.com/features) – Complete list of CRM functionality in Streak.
+- [Contact timeline](https://www.streak.com/features#contact-timeline) – View a chronological history of all emails exchanged between team members and a contact across pipelines.
+- [Inbox data scraping](https://www.streak.com/features#inbox-data-scraping) – Automatically scan Gmail inboxes to extract contact details and email threads for adding leads to pipelines.
+- [Email sharing](https://www.streak.com/features#email-sharing) - Link emails to specific records so teams can view related communication.
+- [Task management](https://www.streak.com/features#task-management) - Link emails to specific records so teams can view related communication.
+- [Mail merge](https://www.streak.com/features#mail-merge) - Send bulk emails with variable fields using templates.
+- [Shared snippets](https://www.streak.com/features#snippets) - Create and organize reusable email templates for consistent team communication and faster responses.
+- [Pipeline filters](https://www.streak.com/features#pipeline-filters) - Filter, sort, and group records by fields such as deal size, task status, and assignee to prioritize work and analyze progress.
+- [Email tracking](https://www.streak.com/features#email-tracking) - Record email open events and link click activity.
+- [AI data entry](https://www.streak.com/features#automated-data-entry) - Extract data from emails and populate CRM fields automatically.
+- [Streak AI](https://www.streak.com/ai) - Overview of Streak's AI features: autofill data, summarize deals, and ask questions about deals without leaving Gmail.
+- [AI summaries](https://www.streak.com/ai#ai-summaries) - One-click recap of a deal's full history, including what happened, what's pending, and who said what.
+- [AI Summaries](https://www.streak.com/features/ai-summaries) - Deep dive on AI-generated deal summaries: overview, key history, and next steps, viewable in the box view, pipeline, and Gmail sidebar.
+- [AI deal Q&A](https://www.streak.com/ai#ai-deal-qna) - Ask a natural language question about a deal and get an answer pulled from its full context, in the box view or Gmail.
+- [AI autofill](https://www.streak.com/ai#ai-autofill) - Scan activities or perform web research to keep CRM fields up to date without manual data entry.
+- [AI Autofill](https://www.streak.com/features/ai-autofill) - Deep dive on automatically filling CRM fields from your deal timeline or the web, run manually or as part of an automation.
+- [AI meeting agenda creator](https://www.streak.com/ai#ai-meeting-agenda-creator) - Generate a call or meeting agenda based on a deal's full history and past conversations.
+- [AI Pipeline Creator](https://www.streak.com/features/ai-pipeline-creator) - Describe your business and workflow in plain language to auto-generate a custom CRM pipeline with stages, fields, and saved views.
+- [Magic columns](https://www.streak.com/features#magic-columns) - Automatically populated fields that track activity metrics such as last interaction, days in stage, and freshness without manual updates.
+- [CRM automation](https://www.streak.com/features#crm-automation) - Trigger actions based on conditions such as stage changes or field updates.
+- [Integrations](https://www.streak.com/features#direct-integrations) - Built-in connectors to apps including Gmail, Google Calendar, Google Sheets, Google Forms, Slack, Zapier, phone dialers, and webhooks.
+- [Reporting](https://www.streak.com/features#reports) - Generate and customize visual reports from pipeline data.
+- [Native dialer](https://www.streak.com/features#dialers) - Place and log voice calls from within the CRM interface.
+- [Mobile apps](https://www.streak.com/features#mobile-apps) - Access pipelines and CRM records using iOS or Android apps.
+- [ChatGPT integration](https://www.streak.com/integrations/chatgpt) - Search deals, update records, create tasks, and log activity in Streak directly from ChatGPT conversations.
+- [Claude integration](https://www.streak.com/integrations/claude) - Search, update, and analyze your Streak pipeline from any Claude conversation on web, desktop, Claude Code, or mobile.
+- [MCP integration](https://www.streak.com/integrations/mcp) - Connect Streak's MCP server to any MCP-compatible AI assistant to read and update CRM data.
+- [LinkedIn integration](https://www.streak.com/integrations/linkedin) - Send LinkedIn profiles to Streak and auto-enrich contacts with profile details and verified email addresses.
+- [Allo integration](https://www.streak.com/integrations/allo-phone-system) - Connect the Allo phone system to auto-log calls, SMS, transcripts, and summaries to Gmail, with click-to-call from CRM records.
+
+**Pricing**
+- [Pricing](https://www.streak.com/pricing) – Overview of available plans, feature comparisons, and monthly or annual pricing. Streak offers three paid plans: Pro – $49/user/month annually. Includes core CRM features, mail merge, and shared pipelines. Pro+ – $69/user/month annually. Includes everything in Pro, plus advanced reports, integrations and automations, and AI Co-Pilot. Enterprise – $129/user/month annually. Includes everything in Pro+, plus custom roles, data validation, and dedicated support. Email tools like email tracking, mail merge, and thread splitting are also available on the free plan. Annual pricing includes a 20% discount.
+
+**Industries served**
+- [Small Businesses](https://www.streak.com/industries/small-businesses) - Manage sales, orders, projects, hiring, and partnerships for a small business in Gmail.
+- [Real Estate](https://www.streak.com/industries/real-estate) - Manage buyer pipelines, listings, transactions, and closing documents in Gmail.
+- [Startups](https://www.streak.com/industries/startup-founders) - Track startup fundraising, sales deals, hiring, and customer support activity.
+- [Travel Agencies](https://www.streak.com/industries/travel-agencies) - Organize leads, bookings, client itineraries, and supplier communication.
+- [Venture Capital](https://www.streak.com/industries/venture-capital) - Track deal flow, LP relationships, and portfolio company support.
+- [Business Funding](https://www.streak.com/industries/business-funding) - Manage applicants, lenders, and funding or brokerage deals in Gmail.
+- [Influencer & Talent Agencies](https://www.streak.com/industries/influencer-and-talent-agencies) - Manage talent rosters and brand partnership outreach campaigns.
+
+**Processes managed**
+- [Sales](https://www.streak.com/sales-crm) - Track leads, deal stages, contact details, and email history.
+- [Business Development](https://www.streak.com/business-development-crm) - Track partner outreach, deal terms, and ongoing communication.
+- [Support](https://www.streak.com/support-crm) - Track support tickets, customer history, and team responses.
+- [Creator Partnerships](https://www.streak.com/creator-partnerships-crm) - Manage creator outreach, contracts, and content delivery for brand partnerships.
+- [Hiring](https://www.streak.com/hiring-crm) - Manage candidate records, resumes, interview stages, and team feedback.
+- [Fundraising](https://www.streak.com/fundraising-crm) - Log investor outreach, meeting notes, and funding progress.
+- [Product Development](https://www.streak.com/product-development-crm) - Track features and releases from idea to launch.
+
+**Learning & Support**
+- [Streak University](https://www.streak.com/university/welcome-to-streak) - Video tutorials and structured lessons on using Streak.
+- [Live Classes](https://www.streak.com/classes) - Scheduled live training sessions covering CRM setup and workflow configuration.
+- [Knowledge Base](https://support.streak.com/) - Help articles covering features, configuration, and troubleshooting.
+- [Blog](https://www.streak.com/blog/) - Posts from the Streak team about product updates, real examples, and how Streak works behind the scenes.
+- [YouTube](https://www.youtube.com/@StreakinGmail) - Instructional videos, product demonstrations, and recorded training.
+- [Custom CRM Setup](https://www.streak.com/advanced-implementation) - Implementation support for configuring workflows and team processes.
+
+**Developer & Integrations**
+- [API Docs](https://streak.readme.io/) - Reference documentation for using the Streak API to create integrations and connect external tools.
+
+**Company**
+- [About](https://www.streak.com/about) - Directory of current team members at Streak.
+- [Careers](https://www.streak.com/careers) - Job openings and hiring information.
+- [Referral Program](https://support.streak.com/en/articles/4178004-referral-program) - Terms and instructions for sharing Streak and receiving account credit.
+- [Affiliate Program](https://streak.partnerstack.com/) - Program for earning commission through tracked referrals.

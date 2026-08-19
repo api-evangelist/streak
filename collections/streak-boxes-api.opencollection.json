@@ -1,0 +1,115 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Streak REST Boxes API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Boxes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all boxes in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/boxes",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all boxes in a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new box in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/boxes",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new box in a pipeline"
+        },
+        {
+          "info": {
+            "name": "Get a single box",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a single box"
+        },
+        {
+          "info": {
+            "name": "Edit a box (update properties of a box)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Edit a box (update properties of a box)"
+        },
+        {
+          "info": {
+            "name": "Delete a box",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.streak.com/api/v1/boxes/:boxKey",
+            "params": [
+              {
+                "name": "boxKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a box"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

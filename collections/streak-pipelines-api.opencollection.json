@@ -1,0 +1,104 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Streak REST Boxes Pipelines API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pipelines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all pipelines accessible to the authenticated user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines"
+          },
+          "docs": "List all pipelines accessible to the authenticated user"
+        },
+        {
+          "info": {
+            "name": "Create a new pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.streak.com/api/v1/pipelines"
+          },
+          "docs": "Create a new pipeline"
+        },
+        {
+          "info": {
+            "name": "Get a single pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Get a single pipeline"
+        },
+        {
+          "info": {
+            "name": "Edit a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Edit a pipeline"
+        },
+        {
+          "info": {
+            "name": "Delete a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path",
+                "description": "Unique identifier for the pipeline"
+              }
+            ]
+          },
+          "docs": "Delete a pipeline"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

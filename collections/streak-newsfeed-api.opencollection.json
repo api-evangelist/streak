@@ -1,0 +1,43 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Streak REST Boxes Newsfeed API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Newsfeed",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get historical changes for a pipeline and its boxes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/newsfeed",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get historical changes for a pipeline and its boxes"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

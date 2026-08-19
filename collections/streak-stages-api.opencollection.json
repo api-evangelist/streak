@@ -1,0 +1,61 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Streak REST Boxes Stages API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Stages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List all stages of a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/stages",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List all stages of a pipeline"
+        },
+        {
+          "info": {
+            "name": "Create a new stage in a pipeline",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.streak.com/api/v1/pipelines/:pipelineKey/stages",
+            "params": [
+              {
+                "name": "pipelineKey",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Create a new stage in a pipeline"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

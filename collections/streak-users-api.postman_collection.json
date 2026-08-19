@@ -1,0 +1,112 @@
+{
+  "item": [
+    {
+      "id": "eaad24d1-5122-40f0-a568-e277af35450d",
+      "name": "Users",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dc2283b4-c741-4024-8e68-2a9439955094",
+          "name": "Get the currently authenticated user",
+          "request": {
+            "name": "Get the currently authenticated user",
+            "description": {},
+            "url": {
+              "path": [
+                "users",
+                "me"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d81d92c6-c5a4-47c4-9e8d-0af814d13e62",
+              "name": "The current user object",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "users",
+                    "me"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.streak.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5d9351af-bf98-4641-9b31-938d92f1b4ff",
+    "name": "Streak REST Boxes Users API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing\nCRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,\nfiles, comments, users, and teams.\n\nAuthentication uses HTTP Basic Auth with the API key supplied as the username and\nan empty password. All requests must use HTTPS.\n\n\nContact Support:\n Name: Streak Support",
+      "type": "text/plain"
+    }
+  }
+}

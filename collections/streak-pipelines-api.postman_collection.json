@@ -1,0 +1,424 @@
+{
+  "item": [
+    {
+      "id": "b2daffb2-7768-4046-9f58-bbf70c046c11",
+      "name": "Pipelines",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "846179f8-e947-47ea-916e-e04bdd1d0d56",
+          "name": "List all pipelines accessible to the authenticated user",
+          "request": {
+            "name": "List all pipelines accessible to the authenticated user",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f9cd00a7-6be6-45a5-9879-88eda63ab948",
+              "name": "An array of pipelines",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "73d63807-10d4-4c62-89ea-7bf9d95939aa",
+          "name": "Create a new pipeline",
+          "request": {
+            "name": "Create a new pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5849c112-b1ba-4d19-b62f-979d919b8109",
+              "name": "The created pipeline",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "721bfe5e-8225-4ffb-90a0-c37c45c51436",
+          "name": "Get a single pipeline",
+          "request": {
+            "name": "Get a single pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) Unique identifier for the pipeline"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "315073b7-96d4-4f3e-956d-8cee821a23d7",
+              "name": "A pipeline object",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) Unique identifier for the pipeline"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "65d2c82b-1019-4ecf-b602-59908776779c",
+          "name": "Edit a pipeline",
+          "request": {
+            "name": "Edit a pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) Unique identifier for the pipeline"
+                }
+              ]
+            },
+            "method": "PUT",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f987b0a1-3c13-4ade-9695-0579a13dad77",
+              "name": "The updated pipeline",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) Unique identifier for the pipeline"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ffa9274c-7684-4033-a1f6-03b5d512705d",
+          "name": "Delete a pipeline",
+          "request": {
+            "name": "Delete a pipeline",
+            "description": {},
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineKey"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineKey",
+                  "description": "(Required) Unique identifier for the pipeline"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3d1a9202-e13c-4c96-b0fd-4f5cd9c869c0",
+              "name": "Deletion result",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineKey"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineKey",
+                      "description": "(Required) Unique identifier for the pipeline"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.streak.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3aa595e4-2a08-4d66-aec6-40131d916a50",
+    "name": "Streak REST Boxes Pipelines API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful API for the Streak CRM (a Gmail-based pipeline management tool) exposing\nCRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks,\nfiles, comments, users, and teams.\n\nAuthentication uses HTTP Basic Auth with the API key supplied as the username and\nan empty password. All requests must use HTTPS.\n\n\nContact Support:\n Name: Streak Support",
+      "type": "text/plain"
+    }
+  }
+}
