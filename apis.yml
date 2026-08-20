@@ -30,6 +30,15 @@ tags:
   - Email Tracking
   - Productivity
   - Small Business
+  - Workflows
+tags_raw:
+  - CRM
+  - Sales
+  - Gmail
+  - Pipeline Management
+  - Email Tracking
+  - Productivity
+  - Small Business
   - Workflow
 url: >-
   https://raw.githubusercontent.com/api-evangelist/streak/refs/heads/main/apis.yml
@@ -86,6 +95,8 @@ apis:
   humanURL: https://streak.readme.io/docs
   baseURL: https://api.streak.com/api
   tags:
+  - News Feed
+  tags_raw:
   - Newsfeed
   properties:
   - type: OpenAPI
@@ -116,6 +127,8 @@ apis:
   humanURL: https://streak.readme.io/docs
   baseURL: https://api.streak.com/api
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
@@ -126,6 +139,8 @@ apis:
   humanURL: https://streak.readme.io/docs
   baseURL: https://api.streak.com/api
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
