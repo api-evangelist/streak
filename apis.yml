@@ -107,7 +107,7 @@ apis:
   humanURL: https://streak.readme.io/docs
   baseURL: https://api.streak.com/api
   tags:
-  - Newsfeed
+  - News Feed
   tags_raw:
   - Newsfeed
   properties:
