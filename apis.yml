@@ -102,18 +102,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/streak-fields-api-openapi.yml
-- aid: streak:streak-newsfeed-api
-  name: Streak Newsfeed API
-  description: The Newsfeed API from Streak — 1 operation(s) for newsfeed.
-  humanURL: https://streak.readme.io/docs
-  baseURL: https://api.streak.com/api
-  tags:
-  - News Feed
-  tags_raw:
-  - Newsfeed
-  properties:
-  - type: OpenAPI
-    url: openapi/streak-newsfeed-api-openapi.yml
 - aid: streak:streak-pipelines-api
   name: Streak Pipelines API
   description: The Pipelines API from Streak — 2 operation(s) for pipelines.
@@ -158,6 +146,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/streak-webhooks-api-openapi.yml
+- aid: streak:streak-news-feed-api
+  name: Streak News Feed API
+  description: The News Feed API from Streak — 1 operation(s) for news feed.
+  humanURL: https://streak.readme.io/docs
+  baseURL: https://api.streak.com/api
+  tags:
+  - News Feed
+  properties:
+  - type: OpenAPI
+    url: openapi/streak-news-feed-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/streak-agentic-access.yml
