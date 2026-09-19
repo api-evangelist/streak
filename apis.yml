@@ -70,6 +70,12 @@ apis:
   tags:
   - CRM
   - Pipelines
+  - Box
+  - Stages
+  - REST
+  tags_raw:
+  - CRM
+  - Pipelines
   - Boxes
   - Stages
   - REST
@@ -88,6 +94,8 @@ apis:
   humanURL: https://streak.readme.io/docs
   baseURL: https://api.streak.com/api
   tags:
+  - Box
+  tags_raw:
   - Boxes
   properties:
   - type: OpenAPI
