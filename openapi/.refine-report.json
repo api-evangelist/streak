@@ -1,13 +1,7 @@
 {
   "provider": "streak",
   "sources": [
-    "streak-boxes-api-openapi.yml",
-    "streak-fields-api-openapi.yml",
-    "streak-newsfeed-api-openapi.yml",
-    "streak-pipelines-api-openapi.yml",
-    "streak-stages-api-openapi.yml",
-    "streak-users-api-openapi.yml",
-    "streak-webhooks-api-openapi.yml"
+    "_original/streak-openapi.yml"
   ],
   "outputs": [
     "streak-boxes-api-openapi.yml",
@@ -18,9 +12,24 @@
     "streak-users-api-openapi.yml",
     "streak-webhooks-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "streak-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: streak-news-feed-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 8 total)"
+  ],
+  "skipped": [
+    "streak-boxes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-fields-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-news-feed-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-pipelines-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-stages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-users-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "streak-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
