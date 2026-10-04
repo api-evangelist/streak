@@ -1,0 +1,46 @@
+slug: streak
+provider: Streak
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Pipelines
+  spec_file: streak-pipelines-api-openapi.yml
+  capability_id: BC-410.30
+  capability_id_l1: BC-410
+  capability_name: Opportunity & Pipeline Management
+  confidence: 0.78
+  evidence: 'GET /pipelines listPipelines List all pipelines accessible to the authenticated user; vendor:
+    ''turning the inbox into a pipeline management workspace for sales'''
+  reason: Pipeline CRUD in a CRM is the core structure for lead/deal pipeline management. Confidence tempered
+    because Streak pipelines are explicitly also used for hiring, support and fundraising workflows.
+- tag: Boxes
+  spec_file: streak-boxes-api-openapi.yml
+  capability_id: BC-410.30
+  capability_id_l1: BC-410
+  capability_name: Opportunity & Pipeline Management
+  confidence: 0.72
+  evidence: 'PUT /pipelines/{pipelineKey}/boxes createBoxInPipeline Create a new box in a pipeline; vendor:
+    ''CRM ... pipeline management workspace for sales'''
+  reason: Boxes are the CRM records (deals) that move through a sales pipeline, so CRUD on boxes realises
+    deal/opportunity lifecycle management. Some ambiguity because Streak pipelines are also used for hiring
+    and project tracking, hence moderate confidence.
+- tag: Stages
+  spec_file: streak-stages-api-openapi.yml
+  capability_id: BC-410.30
+  capability_id_l1: BC-410
+  capability_name: Opportunity & Pipeline Management
+  confidence: 0.7
+  evidence: GET /pipelines/{pipelineKey}/stages listStages List all stages of a pipeline
+  reason: Stages define the progression steps records move through in a CRM sales pipeline, supporting
+    deal/pipeline lifecycle management. Partly configuration-like and pipeline purpose is generic, so
+    moderate confidence.

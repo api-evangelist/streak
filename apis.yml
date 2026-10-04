@@ -165,6 +165,9 @@ apis:
   - type: OpenAPI
     url: openapi/streak-news-feed-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/streak-capability-edges.yml
+    name: Streak Business Capability Map
   - type: AgenticAccess
     url: agentic-access/streak-agentic-access.yml
   - type: VulnerabilityDisclosure
