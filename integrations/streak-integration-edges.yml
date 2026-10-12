@@ -1,0 +1,467 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/streak/integrations
+checked:
+- https://composio.dev/toolkits/streak
+- https://monid.ai/tools/streak
+- https://n8n.io/integrations/streak/
+- https://zapier.com/apps/streak/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: streak
+  url: https://zapier.com/apps/streak/integrations
+  external_url: https://www.streak.com/
+  partner_tier: GOLD
+  triggers:
+  - key: box_change_pipeline
+    label: Box Change Pipeline
+  - key: box_change_stage
+    label: Box Change Stage
+  - key: box_edit
+    label: Updated Box
+  - key: box_email_received_count
+    label: Box Email Received Count Change
+  - key: comment_create
+    label: New Comment
+  - key: contact_edit
+    label: Updated Contact
+  - key: new_box_v2
+    label: New Box
+  - key: new_contact
+    label: New Contact
+  - key: task_complete
+    label: Task Complete
+  - key: task_create
+    label: New Task
+  - key: task_due
+    label: Task Due
+  actions:
+  - key: add_contact
+    label: Add Contact to Box
+  - key: add_organization
+    label: Add Organization to Box
+  - key: create_box_json
+    label: Create New Box
+  - key: create_comment
+    label: Create Comment
+  - key: create_task
+    label: Create Task
+  - key: edit_box
+    label: Edit Box
+  - key: edit_task_by_name
+    label: Edit Task
+  - key: fetch_file_by_file_key
+    label: Get File by File Key
+  - key: get_full_thread_by_key
+    label: Get Full Thread by Key
+  - key: link_boxes
+    label: Link Boxes
+  - key: log_meeting
+    label: Create Meeting / Call Log
+  - key: update_contact_action
+    label: Update Contact
+  - key: _zap_raw_request
+    label: API Request (Beta)
+  searches:
+  - key: box_search_master
+    label: Find a Box
+  - key: contact_search_master
+    label: Find a Contact
+  - key: search_organizations
+    label: Find an Organization
+edges:
+- partner_name: Airtable
+  partner: airtable
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/airtable
+  direction: third-party
+  category: Databases
+  partner_url: https://airtable.com/
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: Google Calendar
+  partner: google-calendar
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-calendar
+  direction: third-party
+  category: Calendar
+  partner_url: https://calendar.google.com/
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Gravity Forms
+  partner: gravity-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/gravity-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.gravityforms.com/?utm_campaign=partners&utm_source=zapier-listing-learn-more&utm_medium=free-placement
+- partner_name: Google Contacts
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-contacts
+  direction: third-party
+  category: Contact Management
+  partner_url: https://www.google.com/contacts/
+- partner_name: Unbounce
+  partner: unbounce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/unbounce
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://unbounce.com/
+- partner_name: Mailparser
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/mailparser
+  direction: third-party
+  category: Email
+  partner_url: https://mailparser.io/
+- partner_name: OnceHub
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/oncehub
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://www.oncehub.com/scheduleonce/home
+- partner_name: Asana
+  partner: asana
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/asana
+  direction: third-party
+  category: Project Management
+  partner_url: http://asana.com/
+- partner_name: Google Tasks
+  partner: google-tasks
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-tasks
+  direction: third-party
+  category: Google
+  partner_url: https://google.com/
+- partner_name: Google Docs
+  partner: google-docs
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-docs
+  direction: third-party
+  category: Documents
+  partner_url: http://google.com/
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: WooCommerce
+  partner: woocommerce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/woocommerce
+  direction: third-party
+  category: eCommerce
+  partner_url: https://woocommerce.com/products/woocommerce-zapier/?utm_source=zapier&utm_medium=website&utm_campaign=integration
+- partner_name: ClickUp
+  partner: clickup
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/clickup
+  direction: third-party
+  category: Project Management
+  partner_url: https://clickup.com/zapier
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: Todoist
+  partner: todoist
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/todoist
+  direction: third-party
+  category: Task Management
+  partner_url: https://todoist.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Wix
+  partner: wix
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/wix
+  direction: third-party
+  category: Website Builders
+  partner_url: https://www.wix.com/
+- partner_name: RingCentral
+  partner: ringcentral
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/ringcentral
+  direction: third-party
+  category: Phone & SMS
+  partner_url: http://www.ringcentral.com/
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: WPForms
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/wpforms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://wpforms.com/
+- partner_name: Google Drive
+  partner: google-drive
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/google-drive
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://www.google.com/drive/
+- partner_name: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/activecampaign
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.activecampaign.com/?utm_source=unpaid_syndication_website&utm_medium=referral&utm_campaign=zapier_listing
+- partner_name: 123FormBuilder
+  partner: 123formbuilder
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/streak/integrations/123formbuilder
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.123formbuilder.com/?utm_source=zapier&utm_medium=zapier
+templates:
+- title: Create boxes in Streak from new emails matching Gmail search queries
+  url: https://zapier.com/apps/gmail/integrations/streak/3571/create-boxes-in-streak-from-new-emails-matching-gmail-search-queries
+  apps:
+  - gmail
+  - streak
+- title: Add row to Google Sheets for new Streak boxes
+  url: https://zapier.com/apps/google-sheets/integrations/streak/810453/add-row-to-google-sheets-for-new-streak-boxes
+  apps:
+  - streak
+  - google-sheets
+- title: Create Google Contacts for new contacts in Streak
+  url: https://zapier.com/apps/google-contacts/integrations/streak/177918/create-google-contacts-for-new-contacts-in-streak
+  apps:
+  - streak
+  - google-contacts
+- title: Create boxes and add contacts in Streak from new Jotform form submissions
+  url: https://zapier.com/apps/jotform/integrations/streak/811089/create-boxes-and-add-contacts-in-streak-from-new-jotform-form-submissions
+  apps:
+  - jotform
+  - streak
+- title: Create Streak boxes from new rows in Google Sheets
+  url: https://zapier.com/apps/google-sheets/integrations/streak/810450/create-streak-boxes-from-new-rows-in-google-sheets
+  apps:
+  - google-sheets
+  - streak
+- title: Send an email with Gmail when a box changes stage in Streak
+  url: https://zapier.com/apps/gmail/integrations/streak/18918/send-an-email-with-gmail-when-a-box-changes-stage-in-streak
+  apps:
+  - streak
+  - gmail
+- title: Create boxes in Streak from new Jotform submissions
+  url: https://zapier.com/apps/jotform/integrations/streak/3423/create-boxes-in-streak-from-new-jotform-submissions
+  apps:
+  - jotform
+  - streak
+- title: Create boxes in Streak from new rows in Google Sheets
+  url: https://zapier.com/apps/google-sheets/integrations/streak/3171/create-boxes-in-streak-from-new-rows-in-google-sheets
+  apps:
+  - google-sheets
+  - streak
+- title: Create boxes in Streak from new Unbounce form submissions
+  url: https://zapier.com/apps/streak/integrations/unbounce/3327/create-boxes-in-streak-from-new-unbounce-form-submissions
+  apps:
+  - unbounce
+  - streak
+- title: Create Google Calendar events from new Streak Boxes
+  url: https://zapier.com/apps/google-calendar/integrations/streak/225/create-google-calendar-events-from-new-streak-boxes
+  apps:
+  - streak
+  - google-calendar
+- title: Create new Streak boxes from Typeform form entries
+  url: https://zapier.com/apps/streak/integrations/typeform/1852/create-new-streak-boxes-from-typeform-form-entries
+  apps:
+  - typeform
+  - streak
+- title: Capture new Google Forms responses as new Streak boxes
+  url: https://zapier.com/apps/google-forms/integrations/streak/66684/capture-new-google-forms-responses-as-new-streak-boxes
+  apps:
+  - google-forms
+  - streak
+template_total: 989
