@@ -6,6 +6,7 @@ checked:
 - https://composio.dev/toolkits/streak
 - https://monid.ai/tools/streak
 - https://n8n.io/integrations/streak/
+- https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/streak/integrations
 summary: null
 marketplace_apps:
@@ -403,6 +404,31 @@ edges:
   direction: third-party
   category: Forms & Surveys
   partner_url: https://www.123formbuilder.com/?utm_source=zapier&utm_medium=zapier
+- partner_name: Zapier
+  partner: zapier
+  partner_match: aggregator
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://zapier.com/apps/streak/integrations
+  category: null
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Streak
+    matched_domain: streak.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: streak
+    beta: false
+    builder: unknown (not in the directory record)
+  detected_by: sweep-workflow-automation.py
+  first_seen: '2026-10-15'
 templates:
 - title: Create boxes in Streak from new emails matching Gmail search queries
   url: https://zapier.com/apps/gmail/integrations/streak/3571/create-boxes-in-streak-from-new-emails-matching-gmail-search-queries
