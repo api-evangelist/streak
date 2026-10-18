@@ -3,11 +3,13 @@ method: searched
 source:
 - https://zapier.com/apps/streak/integrations
 checked:
+- google-workspace/integrations/google-workspace-integration-edges.yml
 - https://composio.dev/toolkits/streak
 - https://monid.ai/tools/streak
 - https://n8n.io/integrations/streak/
 - https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/streak/integrations
+- slack/integrations/slack-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -429,6 +431,40 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
+- partner_name: Google Workspace (own)
+  partner: google-workspace
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://workspace.google.com/marketplace/app/streak_crm_importer/1008328246438
+  mirror_of: google-workspace/integrations/google-workspace-integration-edges.yml
+  apps:
+  - Streak CRM Importer
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Google Workspace app
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/AG7JZU4NN-streak
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Streak
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
 templates:
 - title: Create boxes in Streak from new emails matching Gmail search queries
   url: https://zapier.com/apps/gmail/integrations/streak/3571/create-boxes-in-streak-from-new-emails-matching-gmail-search-queries
