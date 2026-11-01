@@ -1,4 +1,4 @@
-# Streak (streak)
+# Streak
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,67 +66,121 @@
 
 Streak is a CRM that lives inside Gmail, turning the inbox into a pipeline management workspace for sales, hiring, support, fundraising, deal flow, and project tracking using pipelines, boxes, stages, and email tracking. The Streak API provides programmatic REST access to the core CRM data models including pipelines, boxes, stages, fields, threads, tasks, and teams. Authentication uses HTTP Basic Auth with the API key as the username.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/streak/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/streak/refs/heads/main/apis.yml)
+**Areas:** CRM · Sales · Gmail · Pipeline Management · Email Tracking · Productivity · Small Business · Workflows
 
-## Scope
+## Streak on APIs.io
 
-- **Type:** Index
+Everything profiled for Streak is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/streak/](https://apis.io/providers/streak/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- CRM
-- Sales
-- Gmail
-- Pipeline Management
-- Email Tracking
-- Productivity
-- Small Business
-- Workflow
+- [Streak REST API](https://apis.io/apis/streak/rest-api/) — RESTful API exposing CRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks, files, comments, users, and teams in the Streak CRM.…
+- [Streak Boxes API](https://apis.io/apis/streak/streak-boxes-api/) — The Boxes API from Streak — 2 operation(s) for boxes.
+- [Streak Fields API](https://apis.io/apis/streak/streak-fields-api/) — The Fields API from Streak — 1 operation(s) for fields.
+- [Streak Pipelines API](https://apis.io/apis/streak/streak-pipelines-api/) — The Pipelines API from Streak — 2 operation(s) for pipelines.
+- [Streak Stages API](https://apis.io/apis/streak/streak-stages-api/) — The Stages API from Streak — 1 operation(s) for stages.
+- [Streak Users API](https://apis.io/apis/streak/streak-users-api/) — The Users API from Streak — 1 operation(s) for users.
+- [Streak Webhooks API](https://apis.io/apis/streak/streak-webhooks-api/) — The Webhooks API from Streak — 1 operation(s) for webhooks.
+- [Streak News Feed API](https://apis.io/apis/streak/streak-news-feed-api/) — The News Feed API from Streak — 1 operation(s) for news feed.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Streak REST API
+Model Context Protocol servers that expose the API to agents.
 
-RESTful API exposing CRUD access to pipelines, boxes (records), stages, custom fields, threads, tasks, files, comments, users, and teams in the Streak CRM. Authentication uses HTTP Basic Auth with the API key supplied as the username and an empty password.
+- [streak](https://apis.io/servers/streak/streak/)
 
-- **Human URL:** [https://streak.readme.io/docs](https://streak.readme.io/docs)
-- **Base URL:** `https://api.streak.com/api`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- CRM
-- Pipelines
-- Boxes
-- Stages
-- REST
+- [Streak Agentic Access](https://apis.io/agentic-access/streak/streak-agentic-access/)
 
-#### Properties
+#### Collections (8)
 
-- [Documentation](https://streak.readme.io/docs)
-- [Authentication](https://streak.readme.io/docs/authentication)
-- [Getting Started](https://support.streak.com/en/articles/2612883-get-your-streak-api-key)
-- [Announcement](https://medium.com/streak-developer-blog/introducing-the-streak-api-4773a18225ec)
-- [Postman Collection](collections/streak.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/streak.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Streak REST API](https://apis.io/collections/streak/open-streak/)
+- [Streak REST Boxes API](https://apis.io/collections/streak/open-streak-boxes-api/)
+- [Streak REST Boxes Fields API](https://apis.io/collections/streak/open-streak-fields-api/)
+- [Streak REST Boxes Newsfeed API](https://apis.io/collections/streak/open-streak-newsfeed-api/)
+- [Streak REST Boxes Pipelines API](https://apis.io/collections/streak/open-streak-pipelines-api/)
+- [Streak REST Boxes Stages API](https://apis.io/collections/streak/open-streak-stages-api/)
+- [Streak REST Boxes Users API](https://apis.io/collections/streak/open-streak-users-api/)
+- [Streak REST Boxes Webhooks API](https://apis.io/collections/streak/open-streak-webhooks-api/)
 
-- [LinkedIn](https://www.linkedin.com/company/streak-com)
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Streak Authentication](https://apis.io/security/streak/streak-authentication/)
+- [Streak Domain Security](https://apis.io/security/streak/streak-domain-security/)
+- [Streak Vulnerability Disclosure](https://apis.io/security/streak/streak-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.streak.com)
 - [Documentation](https://streak.readme.io/docs)
 - [Pricing](https://www.streak.com/pricing)
-- [Sign Up](https://www.streak.com/sign-up)
 - [Support](https://support.streak.com)
-- [Features](https://www.streak.com/features)
-- [Chrome  Extension](https://chromewebstore.google.com/detail/streak-crm-for-gmail/pnnfemgpilpdaojpnkjdgfgbnnjojfik)
-- [L L Ms Txt](https://api.streak.com/llms.txt)
+- [Blog](https://medium.com/feed/streak-developer-blog)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 31.4** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 48.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 29.8 |
+| Access clarity | 23.7 |
+
+**Agent readiness 27.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 17.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/streak/](https://apis.io/providers/streak/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Streak: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/streak/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
